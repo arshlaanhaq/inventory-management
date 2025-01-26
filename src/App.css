@@ -1,0 +1,168 @@
+/* App.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.App:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2b2b52;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+form input, form select, form button {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+form input:focus, form select:focus {
+  border-color: #4c83f4;
+  background-color: #f4faff;
+}
+
+ button {
+  background-color: #4c83f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ button:hover {
+  background-color: #395cc6;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+thead {
+  background-color: #4c83f4;
+  color: white;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+}
+
+tbody tr {
+  background-color: #ffffff;
+  border-bottom: 2px solid #f0f4f9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+  background-color: #e9f4ff;
+}
+
+tbody td {
+  padding: 12px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-buttons .edit-btn {
+  background-color: #ffb300;
+  color: white;
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #ff9f00;
+}
+
+.action-buttons .delete-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: #c32f39;
+}
+/* Filter Section */
+.filter {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Label for Dropdown */
+.filter label {
+  font-size: 1rem;
+  color: #2b2b52;
+  font-weight: 500;
+}
+
+/* Dropdown Styling */
+.filter select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter select:hover {
+  border-color: #4c83f4;
+  background-color: #f4faff;
+}
+
+.filter select:focus {
+  border-color: #4c83f4;
+  box-shadow: 0 0 8px rgba(76, 131, 244, 0.4);
+}
